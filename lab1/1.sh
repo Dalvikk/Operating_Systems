@@ -1,9 +1,6 @@
 #!/bin/bash
-if [[ $1 -ge $2 && $1 -ge $3 ]]; then
-	echo $1
-elif [[ $2 -ge $1 && $2 -ge $3 ]]; then
-	echo $2
-else
-	echo $3
-fi
+
+value=$(printf '%s\n%s\n%s\n' $1 $2 $3 | sort -n | tail -n 1)
+if [[ $value == "" ]]; then value=0; fi
+echo $value
 
