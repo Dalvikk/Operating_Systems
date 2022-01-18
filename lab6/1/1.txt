@@ -1,0 +1,1 @@
+mkdir, wmic, xcopy, cd, dir, del

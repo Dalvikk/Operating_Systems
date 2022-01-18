@@ -1,0 +1,1 @@
+mkdir, net share, schtasks, forfiles, taskkill, fc
